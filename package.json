@@ -1,0 +1,50 @@
+{
+  "name": "html-to-bb-converter",
+  "displayName": "HTML to BB Converter",
+  "description": "Конвертирует HTML в BB-код для форумов MyBB/RusFF",
+  "version": "1.0.0",
+  "author": {
+    "name": "Alex Kolmar",
+    "email": "lord.trickster@yandex.ru"
+  },
+  "publisher": "AlexKolmar",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexkolmar/html-to-bb-converter"
+  },
+  "bugs": {
+    "url": "https://github.com/alexkolmar/html-to-bb-converter/issues"
+  },
+  "homepage": "https://github.com/alexkolmar/html-to-bb-converter#readme",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:bb-converter.convert"
+  ],
+  "main": "extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "bb-converter.convert",
+        "title": "Конвертировать HTML в BB"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "bb-converter.convert",
+          "group": "modification"
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "jsdom": "^28.1.0"
+  }
+}
