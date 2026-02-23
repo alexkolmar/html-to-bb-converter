@@ -1,0 +1,217 @@
+{
+  "BB Block": {
+    "prefix": "block",
+    "body": "[block=${1:name}]$2[/block]",
+    "description": "Вставить BB block"
+  },
+  "BB URL": {
+    "prefix": "url",
+    "body": "[url=${1:link}]$2[/url]",
+    "description": "Вставить ссылку"
+  },
+  "BB Image": {
+    "prefix": "img",
+    "body": "[img]${1:src}[/img]",
+    "description": "Вставить картинку"
+  },
+  "BB Bold": {
+    "prefix": "b",
+    "body": "[b]$1[/b]",
+    "description": "Жирный текст"
+  },
+  "BB Italic": {
+    "prefix": "i",
+    "body": "[i]$1[/i]",
+    "description": "Курсив"
+  },
+  "BB Underline": {
+    "prefix": "u",
+    "body": "[u]$1[/u]",
+    "description": "Подчеркнутый текст"
+  },
+  "BB Strikethrough": {
+    "prefix": "s",
+    "body": "[s]$1[/s]",
+    "description": "Зачеркнутый текст"
+  },
+  "BB Table": {
+    "prefix": "table",
+    "body": "[table]\n[tr]\n[td]$1[/td]\n[/tr]\n[/table]",
+    "description": "Вставить таблицу"
+  },
+  "BB Table Row": {
+    "prefix": "tr",
+    "body": "[tr]\n[td]$1[/td]\n[/tr]",
+    "description": "Вставить строку таблицы"
+  },
+  "BB Table Cell": {
+    "prefix": "td",
+    "body": "[td]$1[/td]",
+    "description": "Вставить ячейку таблицы"
+  },
+  "BB List": {
+    "prefix": "ul",
+    "body": "[ul]\n[*]$1\n[/ul]",
+    "description": "Вставить ненумерованный список"
+  },
+  "BB Ordered List": {
+    "prefix": "ol",
+    "body": "[ol]\n[*]$1\n[/ol]",
+    "description": "Вставить нумерованный список"
+  },
+  "BB List Item": {
+    "prefix": "li",
+    "body": "[*]$1",
+    "description": "Вставить элемент списка"
+  },
+  "BB Quote": {
+    "prefix": "quote",
+    "body": "[quote]$1[/quote]",
+    "description": "Вставить цитату"
+  },
+  "BB Quote with Author": {
+    "prefix": "quote=",
+    "body": "[quote=${1:author}]$2[/quote]",
+    "description": "Вставить цитату с автором"
+  },
+  "BB Code": {
+    "prefix": "code",
+    "body": "[code]$1[/code]",
+    "description": "Вставить код"
+  },
+  "BB Hide": {
+    "prefix": "hide",
+    "body": "[hide]$1[/hide]",
+    "description": "Вставить скрытый текст"
+  },
+  "BB Hide with Value": {
+    "prefix": "hide=",
+    "body": "[hide=${1:999999999}]$2[/hide]",
+    "description": "Вставить скрытый текст со значением"
+  },
+  "BB PHP Code": {
+    "prefix": "php",
+    "body": "[php]$1[/php]",
+    "description": "Вставить PHP код"
+  },
+  "BB Size": {
+    "prefix": "size",
+    "body": "[size=${1:small}]$2[/size]",
+    "description": "Вставить текст с размером (small, medium, large)"
+  },
+  "BB Font": {
+    "prefix": "font",
+    "body": "[font=${1:Arial}]$2[/font]",
+    "description": "Вставить текст со шрифтом"
+  },
+  "BB Align": {
+    "prefix": "align",
+    "body": "[align=${1|left,center,right,justify|}]$2[/align]",
+    "description": "Выравнивание текста (left, center, right, justify)"
+  },
+    "BB Align Left": {
+    "prefix": "left",
+    "body": "[align=left]$1[/align]",
+    "description": "Выравнивание по левому краю"
+  },
+  "BB Align Center": {
+    "prefix": "center",
+    "body": "[align=center]$1[/align]",
+    "description": "Выравнивание по центру"
+  },
+  "BB Align Right": {
+    "prefix": "right",
+    "body": "[align=right]$1[/align]",
+    "description": "Выравнивание по правому краю"
+  },
+  "BB Align Justify": {
+    "prefix": "justify",
+    "body": "[align=justify]$1[/align]",
+    "description": "Выравнивание по ширине"
+  },
+  "BB Spoiler": {
+    "prefix": "spoiler",
+    "body": "[spoiler]$1[/spoiler]",
+    "description": "Спойлер для текста"
+  },
+  "BB Spoiler with Title": {
+    "prefix": "spoiler=",
+    "body": "[spoiler=${1:title}]$2[/spoiler]",
+    "description": "Спойлер с заголовком"
+  },
+  "BB Media Spoiler": {
+    "prefix": "media",
+    "body": "[media]$1[/media]",
+    "description": "Спойлер для медиа"
+  },
+  "BB Media Spoiler with Title": {
+    "prefix": "media=",
+    "body": "[media=${1:title}]$2[/media]",
+    "description": "Спойлер для медиа с заголовком"
+  },
+  "BB Horizontal Rule": {
+    "prefix": "hr",
+    "body": "[hr]",
+    "description": "Горизонтальный разделитель"
+  },
+  "BB Color": {
+    "prefix": "color",
+    "body": "[color=${1:red}]$2[/color]",
+    "description": "Вставить цветной текст"
+  },
+  "BB Email": {
+    "prefix": "email",
+    "body": "[email=${1:mail@example.com}]$2[/email]",
+    "description": "Вставить email"
+  },
+  "BB Video": {
+    "prefix": "video",
+    "body": "[video]${1:youtube-link}[/video]",
+    "description": "Вставить видео"
+  },
+  "BB YouTube": {
+    "prefix": "youtube",
+    "body": "[youtube]${1:video-id}[/youtube]",
+    "description": "Вставить YouTube видео"
+  },
+    "BB You": {
+    "prefix": "you",
+    "body": "[you]",
+    "description": "Вставить имя читателя"
+  },
+  "BB Added": {
+    "prefix": "add",
+    "body": "[add]$1[/add]",
+    "description": "Добавлено спустя время"
+  },
+  "BB Abbreviation": {
+    "prefix": "abbr",
+    "body": "[abbr=${1:пояснение}]$2[/abbr]",
+    "description": "Текст с пояснением (всплывающая подсказка)"
+  },
+  "BB Anchor": {
+    "prefix": "anchor=",
+    "body": "[anchor=${1:name}]$2[/anchor]",
+    "description": "Якорь для ссылок"
+  },
+  "BB Mark": {
+    "prefix": "mark",
+    "body": "[mark]$1[/mark]",
+    "description": "Маркированный/выделенный текст"
+  },
+  "BB Superscript": {
+    "prefix": "sup",
+    "body": "[sup]$1[/sup]",
+    "description": "Надстрочный текст"
+  },
+  "BB Subscript": {
+    "prefix": "sub",
+    "body": "[sub]$1[/sub]",
+    "description": "Подстрочный текст"
+  },
+  "BB HTML": {
+    "prefix": "html",
+    "body": "[html]$1[/html]",
+    "description": "Вставить HTML код (если разрешено)"
+  }
+}

@@ -2,7 +2,7 @@
   "name": "html-to-bb-converter",
   "displayName": "HTML to BB Converter",
   "description": "Конвертирует HTML в BB-код для форумов MyBB/RusFF",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "author": {
     "name": "Alex Kolmar",
     "email": "lord.trickster@yandex.ru"
@@ -22,7 +22,8 @@
     "vscode": "^1.80.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Programming Languages"
   ],
   "activationEvents": [
     "onCommand:bb-converter.convert"
@@ -42,7 +43,47 @@
           "group": "modification"
         }
       ]
+    },
+    "languages": [
+      {
+        "id": "bbcode",
+        "aliases": ["BBCode","bbcode"],
+        "extensions": [".bb",".bbcode"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "bbcode",
+        "scopeName": "source.bbcode",
+        "path": "./syntaxes/bbcode.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "bbcode",
+        "path": "./snippets/bbcode.json"
+      }
+    ],
+    "configuration": {
+      "title": "BBCode",
+      "properties": {
+        "bbcode.format.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Включить форматирование BBCode"
+        },
+        "bbcode.format.indentSize": {
+          "type": "number",
+          "default": 4,
+          "description": "Размер отступа для вложенных тегов"
+        }
+      }
     }
+  },
+  "capabilities": {
+    "documentFormattingProvider": true,
+    "documentRangeFormattingProvider": true
   },
   "dependencies": {
     "jsdom": "^28.1.0"
