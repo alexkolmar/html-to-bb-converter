@@ -2,7 +2,7 @@
   "name": "html-to-bb-converter",
   "displayName": "HTML to BB Converter",
   "description": "Конвертирует HTML в BB-код для форумов MyBB/RusFF",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": {
     "name": "Alex Kolmar",
     "email": "lord.trickster@yandex.ru"

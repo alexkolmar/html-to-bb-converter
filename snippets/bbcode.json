@@ -71,7 +71,7 @@
   },
   "BB Quote with Author": {
     "prefix": "quote=",
-    "body": "[quote=${1:author}]$2[/quote]",
+    "body": "[quote=\"${1:author}\"]$2[/quote]",
     "description": "Вставить цитату с автором"
   },
   "BB Code": {
